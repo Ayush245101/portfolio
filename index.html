@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayush | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ayush's Portfolio</h1>
+    <p>AI/ML | Data Science</p>
+  </header>
+
+  <div class="tabs">
+    <button class="tab" onclick="showSection('intro')">👋 Intro</button>
+    <button class="tab" onclick="showSection('projects')">📂 Projects</button>
+    <button class="tab" onclick="showSection('resume')">📄 Resume</button>
+    <button class="tab" onclick="showSection('contact')">✉️ Contact</button>
+  </div>
+
+  <!-- Intro Section -->
+  <section id="intro" class="section active bg-intro">
+    <img src="images/logo.jpg" alt="Intro Banner" class="intro-image">
+    <h2>Welcome!</h2>
+    <p>👋 Hi, I'm Ayush — a passionate and results-driven professional specializing in Artificial Intelligence, Machine Learning, and Data Science. I blend analytical thinking with creative problem-solving to build intelligent solutions that make an impact. Let’s innovate and build the future together! </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section bg-projects">
+    <h2>Highlighted Projects</h2>
+    <div class="project-list">
+      <div class="project-card">
+        <img src="images/project1.jpg" alt="Project 1">
+        <div class="project-content">
+          <h3>Paisabazaar Fraud Analysis</h3>
+          <p>Exploratory data analysis on financial data to detect fraud patterns using Python and visualization tools.</p>
+          <a href="https://github.com/Ayush245101/Paisabazaar-Banking-Fraud-Analysis-Exploratory-Data-Analysis" target="_blank">View Project →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project2.jpg" alt="Project 2">
+        <div class="project-content">
+          <h3>Netflix Content Clustering</h3>
+          <p>Used clustering algorithms to group Netflix content by genre and popularity using unsupervised learning techniques.</p>
+          <a href="https://github.com/Ayush245101/Netflix-Movies-TV-shows-Clustering--Unsupervised-Learning" target="_blank">View Project →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project3.jpg" alt="Project 3">
+        <div class="project-content">
+          <h3>Blackcoffer NLP Analysis</h3>
+          <p>Web scraping, readability metrics, and sentiment analysis for real-world business insights using NLP.</p>
+          <a href="https://drive.google.com/file/d/1giSxuZFCH0Dj29-6cAPkygnRpNfCU-W_/view?usp=drive_link" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="section bg-resume">
+    <h2>Resume</h2>
+    <p>You can view or download my latest resume below.</p>
+    <a class="resume-link" href="https://drive.google.com/file/d/1vtnW_Ts2suSB_V8N3DK1mq_30vUSlGxc/view?usp=sharing" target="_blank">📄 View My Resume</a>
+  
+  </section>
+    <section id="contact" class="section">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/mwpoynyw" method="POST" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Ayush | Built with ❤️ using HTML, CSS & JS</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
