@@ -6,7 +6,6 @@
   <title>Ayush | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -26,7 +25,7 @@
   <section id="intro" class="section active bg-intro">
     <img src="images/logo.jpg" alt="Intro Banner" class="intro-image">
     <h2>Welcome!</h2>
-    <p>👋 Hi, I'm Ayush — a passionate and results-driven professional specializing in Artificial Intelligence, Machine Learning, and Data Science. I blend analytical thinking with creative problem-solving to build intelligent solutions that make an impact. Let’s innovate and build the future together! </p>
+    <p>👋 Hi, I'm Ayush — a passionate and results-driven professional specializing in Artificial Intelligence, Machine Learning, and Data Science. I blend analytical thinking with creative problem-solving to build intelligent solutions that make an impact. Let’s innovate and build the future together!</p>
   </section>
 
   <!-- Projects Section -->
@@ -34,27 +33,63 @@
     <h2>Highlighted Projects</h2>
     <div class="project-list">
       <div class="project-card">
-        <img src="images/project1.jpg" alt="Project 1">
+        <img src="images/project1.jpg" alt="Paisabazaar BI Dashboard">
         <div class="project-content">
-          <h3>Paisabazaar Fraud Analysis</h3>
-          <p>Exploratory data analysis on financial data to detect fraud patterns using Python and visualization tools.</p>
-          <a href="https://github.com/Ayush245101/Paisabazaar-Banking-Fraud-Analysis-Exploratory-Data-Analysis" target="_blank">View Project →</a>
+          <h3>Paisabazaar BI Dashboard</h3>
+          <p>
+            Developed an interactive Power BI dashboard for Paisabazaar, visualizing financial product trends, lead sources, and user engagement. Integrated dynamic slicers and filters, allowing business stakeholders to explore KPIs such as loan approval rates, customer demographics, and channel-wise performance. Automated data refresh ensured up-to-date insights. The project improved management decision-making and reporting efficiency.
+          </p>
+          <ul>
+            <li><b>Tools:</b> Power BI, Excel, DAX, Data Modeling</li>
+            <li><b>Key Features:</b> Dynamic data visualization, actionable insights, executive summaries, interactive elements</li>
+            <li><b>Impact:</b> Accelerated business reporting and enhanced visualization of critical metrics</li>
+          </ul>
+          <a href="https://app.powerbi.com/links/w9k4YDsrZz?ctid=3c49034a-59ad-4f71-94fb-4e7222b40642&pbi_source=linkShare" target="_blank">View Dashboard →</a>
         </div>
       </div>
       <div class="project-card">
-        <img src="images/project2.jpg" alt="Project 2">
+        <img src="images/project2.jpg" alt="Netflix Clustering">
         <div class="project-content">
           <h3>Netflix Content Clustering</h3>
-          <p>Used clustering algorithms to group Netflix content by genre and popularity using unsupervised learning techniques.</p>
+          <p>
+            Applied unsupervised machine learning (K-Means, DBSCAN, PCA) to cluster and analyze over 7,000 Netflix titles. Performed data cleaning, feature engineering on genres, cast, and release year, then reduced dimensionality for visualization. Identified patterns in content similarity, enabling personalized content recommendations and strategic content categorization for platforms.
+          </p>
+          <ul>
+            <li><b>Tech Stack:</b> Python, Pandas, Scikit-learn, Matplotlib, Seaborn</li>
+            <li><b>Key Steps:</b> Data preprocessing, feature engineering, algorithm implementation, cluster visualization</li>
+            <li><b>Results:</b> Discovered distinct clusters for genres, release periods, and audience segments, aiding in content strategy</li>
+          </ul>
           <a href="https://github.com/Ayush245101/Netflix-Movies-TV-shows-Clustering--Unsupervised-Learning" target="_blank">View Project →</a>
         </div>
       </div>
       <div class="project-card">
-        <img src="images/project3.jpg" alt="Project 3">
+        <img src="images/project3.jpg" alt="JustWatch Web Scraping">
         <div class="project-content">
-          <h3>Blackcoffer NLP Analysis</h3>
-          <p>Web scraping, readability metrics, and sentiment analysis for real-world business insights using NLP.</p>
-          <a href="https://drive.google.com/file/d/1giSxuZFCH0Dj29-6cAPkygnRpNfCU-W_/view?usp=drive_link" target="_blank">View Project →</a>
+          <h3>JustWatch Web Scraping</h3>
+          <p>
+            Engineered a robust Python-based web scraper to extract movie and TV show data from <b>JustWatch</b>. The scraper automatically gathers metadata such as titles, genres, release dates, platforms, and ratings. Collected data was cleaned and stored in structured CSV format for further analysis, enabling content aggregation, trend analysis, and powering recommendation engines.
+          </p>
+          <ul>
+            <li><b>Libraries:</b> BeautifulSoup, Requests, Pandas</li>
+            <li><b>Features:</b> Automated scraping, error handling, customizable search parameters</li>
+            <li><b>Applications:</b> Data warehousing for analytics, content recommendation, competitor benchmarking</li>
+          </ul>
+          <a href="https://github.com/Ayush245101/justwatch-web-scraping" target="_blank">View Project →</a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/project4.jpg" alt="LinkedIn Schema Design">
+        <div class="project-content">
+          <h3>LinkedIn Schema Design (SQL)</h3>
+          <p>
+            Designed a relational SQL schema to emulate core LinkedIn features such as user profiles, connections, messaging, and job postings. Developed an Entity-Relationship (ER) diagram and implemented robust relational modeling to ensure referential integrity and scalability. Included SQL scripts for table creation, constraints, and sample queries to demonstrate platform logic.
+          </p>
+          <ul>
+            <li><b>Tech Stack:</b> PostgreSQL, MySQL, ER Diagramming Tools</li>
+            <li><b>Key Deliverables:</b> Schema design docs, ER diagrams, SQL scripts</li>
+            <li><b>Learning Outcome:</b> Improved database design, normalization, and relational logic for social platforms</li>
+          </ul>
+          <a href="https://drive.google.com/file/d/14LiGjCmfawyLWcA8KqAsHbHGg3jP41XQ/view" target="_blank">View Schema →</a>
         </div>
       </div>
     </div>
@@ -65,9 +100,10 @@
     <h2>Resume</h2>
     <p>You can view or download my latest resume below.</p>
     <a class="resume-link" href="https://drive.google.com/file/d/1wRKkgUndEFRcmMgvtV7-wr-p2tenMSwc/view?usp=sharing" target="_blank">📄 View My Resume</a>
-  
   </section>
-    <section id="contact" class="section">
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/mwpoynyw" method="POST" class="contact-form">
       <input type="text" name="name" placeholder="Your Name" required />
