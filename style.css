@@ -51,7 +51,8 @@ header {
   transition: background 0.3s;
 }
 
-.tab:hover {
+.tab:hover,
+.tab.active-tab {
   background: #1976d2;
 }
 
@@ -128,6 +129,17 @@ header {
 
 .project-content a:hover {
   text-decoration: underline;
+}
+
+.project-content ul {
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 18px;
+  font-size: 0.97em;
+  color: #444;
+}
+.project-content ul li {
+  margin-bottom: 4px;
 }
 
 .resume-link {
@@ -238,7 +250,7 @@ body.dark {
   --primary-color: #96c1e5;
   --tab-bg: #2c2c2c;
   background-color: #121212;
-  color: #000000fb;
+  color: #ffffff;
 }
 body.dark header {
   background: linear-gradient(90deg, #1e1e1e, #121212);
