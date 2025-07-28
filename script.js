@@ -5,8 +5,9 @@ function showSection(id) {
   document.getElementById(id).classList.add('active');
   // Optionally update the tab highlighting
   document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active-tab'));
-  if (event && event.target) {
-    event.target.classList.add('active-tab');
+  // Add highlight to clicked tab (if supported by browser event)
+  if (window.event && window.event.target && window.event.target.classList.contains('tab')) {
+    window.event.target.classList.add('active-tab');
   }
 }
 
@@ -77,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Smooth scrolling for anchor links (optional, useful for single-page navigation)
+  // Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', function(e) {
       const targetId = this.getAttribute('href').slice(1);
