@@ -7,52 +7,16 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <script src="script.js" defer></script>
-  <style>
-    .social-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
-      margin-top: 48px;
-      margin-bottom: 0;
-    }
-    .social-links a img {
-      width: 36px;
-      height: 36px;
-      transition: transform 0.2s;
-      vertical-align: middle;
-    }
-    .social-links a img:hover {
-      transform: scale(1.15);
-    }
-    /* For placing social icons at bottom of the section */
-    .section {
-      position: relative;
-    }
-    .social-bottom {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 35px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
-    }
-    @media (max-width: 700px) {
-      .section { position: static; }
-      .social-bottom { position: static; margin-top: 40px; }
-    }
-  </style>
 </head>
 <body>
+  <button class="mode-toggle" id="mode-toggle">🌙 Dark Mode</button>
   <header>
     <h1>Ayush's Portfolio</h1>
     <p>AI/ML | Data Science</p>
   </header>
 
   <div class="tabs">
-    <button class="tab" onclick="showSection('intro')">👋 Intro</button>
+    <button class="tab active-tab" onclick="showSection('intro')">👋 Intro</button>
     <button class="tab" onclick="showSection('projects')">📂 Projects</button>
     <button class="tab" onclick="showSection('resume')">📄 Resume</button>
     <button class="tab" onclick="showSection('contact')">✉️ Contact</button>
@@ -66,11 +30,11 @@
     <h2>Welcome!</h2>
     <p>👋 Hi, I'm Ayush — a passionate and results-driven professional specializing in Artificial Intelligence, Machine Learning, and Data Science. I blend analytical thinking with creative problem-solving to build intelligent solutions that make an impact. Let’s innovate and build the future together!</p>
     <div class="social-bottom">
-      <a href="mailto:ayush245101@gmail.com" title="Email Ayush">
-        <img src="https://img.icons8.com/color/48/000000/gmail--v1.png" alt="Gmail">
+      <a href="mailto:ayush245101@gmail.com" aria-label="Gmail" target="_blank">
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" />
       </a>
-      <a href="https://www.linkedin.com/in/ayush-a798aa157/" target="_blank" title="Connect on LinkedIn">
-        <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+      <a href="https://www.linkedin.com/in/ayush-a798aa157/" aria-label="LinkedIn" target="_blank">
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
       </a>
     </div>
   </section>
@@ -185,11 +149,11 @@
       <button type="submit">Send Message</button>
     </form>
     <div class="social-bottom">
-      <a href="mailto:ayush245101@gmail.com" title="Email Ayush">
-        <img src="https://img.icons8.com/color/48/000000/gmail--v1.png" alt="Gmail">
+      <a href="mailto:ayush245101@gmail.com" aria-label="Gmail" target="_blank">
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg" alt="Gmail" />
       </a>
-      <a href="https://www.linkedin.com/in/ayush-a798aa157/" target="_blank" title="Connect on LinkedIn">
-        <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+      <a href="https://www.linkedin.com/in/ayush-a798aa157/" aria-label="LinkedIn" target="_blank">
+        <img class="icon" src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" />
       </a>
     </div>
   </section>
