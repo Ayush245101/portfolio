@@ -3,11 +3,16 @@ function showSection(id) {
   document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
   // Show the selected section
   document.getElementById(id).classList.add('active');
-  // Optionally update the tab highlighting
+  // Update tabs
   document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active-tab'));
-  // Add highlight to clicked tab (if supported by browser event)
+  // Add highlight to clicked tab
   if (window.event && window.event.target && window.event.target.classList.contains('tab')) {
     window.event.target.classList.add('active-tab');
+  } else {
+    // fallback: highlight the correct tab by section order
+    const tabs = Array.from(document.querySelectorAll('.tab'));
+    const idx = ['intro','projects','resume','contact'].indexOf(id);
+    if (tabs[idx]) tabs[idx].classList.add('active-tab');
   }
 }
 
@@ -53,21 +58,22 @@ if (scrollBtn) {
   };
 }
 
-// Dark/Light mode toggle (optional button with id="mode-toggle" in HTML)
+// Dark/Light mode toggle
 document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("mode-toggle");
   const body = document.body;
 
-  if (toggleBtn) {
-    // Check local storage preference
-    if (localStorage.getItem("theme") === "dark") {
-      body.classList.add("dark");
-      toggleBtn.textContent = "☀️ Light Mode";
-    }
+  // Initial state from localStorage
+  if (localStorage.getItem("theme") === "dark") {
+    body.classList.add("dark");
+    if (toggleBtn) toggleBtn.textContent = "☀️ Light Mode";
+  } else {
+    if (toggleBtn) toggleBtn.textContent = "🌙 Dark Mode";
+  }
 
+  if (toggleBtn) {
     toggleBtn.addEventListener("click", () => {
       body.classList.toggle("dark");
-
       if (body.classList.contains("dark")) {
         toggleBtn.textContent = "☀️ Light Mode";
         localStorage.setItem("theme", "dark");
