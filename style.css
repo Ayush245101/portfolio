@@ -325,15 +325,17 @@ body.dark footer {
   color: #bbb;
 }
 
+/* Social icons at the bottom of Intro and Contact sections */
 .social-bottom {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 35px;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 24px;
+  padding-bottom: 24px; /* Add space from the bottom edge */
 }
 .social-bottom a img {
   width: 36px;
@@ -346,5 +348,10 @@ body.dark footer {
 }
 @media (max-width: 700px) {
   .section { position: static; }
-  .social-bottom { position: static; margin-top: 40px; }
+  .social-bottom { 
+    position: static; 
+    margin-top: 80px;
+    margin-bottom: 16px;
+    padding-bottom: 0;
+  }
 }
